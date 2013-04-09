@@ -1,0 +1,19 @@
+Title: Cranberry Initiative - Solving large-scale publishing challenges
+Libs: uservoice, bxSlider, -comments
+
+
+- for post in index.posts[0..2] do
+  article 
+    h1.page-header
+      a href=post.path #{post.heading} 
+      small #{post.date.strftime("%A, %B %e %Y")}
+    == post.body(self)
+    a href="#{post.path}#disqus_thread" View comments on original page...
+
+
+
+h3
+ a href="/blog" Browse archives...
+
+
+

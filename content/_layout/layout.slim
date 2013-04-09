@@ -1,0 +1,79 @@
+layout: false
+
+doctype html
+html lang="en" class="no-js"
+  head
+    meta charset="utf-8"
+    
+    - if page.meta.description
+      meta name="description" content=page.meta.description
+    - if page.meta.keywords
+      meta name="keywords" content=page.meta.keywords
+    - if page.meta.author || config.author.name
+      meta name="author" content=(page.meta.author || config.author.name)
+
+    - if config.author.google_profile
+      link rel="me" type="text/html" href=config.author.google_profile
+
+    title
+      = page.title
+
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+      
+
+    link href="/css/site.css" rel="stylesheet"
+
+    / HTML5 shim, for IE6-8 support of HTML5 elements 
+    /[if lt IE 9]
+      script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"
+
+    link href="/rss.xml" rel="alternate" type="application/atom+xml"
+
+    == partial :analytics
+  body
+    == partial :header
+    .container
+      == yield
+    footer.footer
+      .container
+        == partial :footer
+
+    script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"
+    javascript:
+      !window.jQuery && document.write(unescape('%3Cscript src="/js/jquery-1.8.2.min.js"%3E%3C/script%3E'))//'
+    script src="/js/bootstrap.min.js"
+    script src="/js/highlight/highlight.pack.js"
+
+
+    - if page.lib?("search")
+      script src="http://www.google.com/jsapi" 
+      javascript:
+        google.load('search', '1', {language : 'en', style : google.loader.themes.SHINY});
+        var _gaq = _gaq || [];
+        _gaq.push(["_setAccount", "#{config.google_analytics_code}\""]);
+        function _trackQuery(control, searcher, query) {
+          var gaQueryParamName = "q";
+          var loc = document.location;
+          var url = [
+            loc.pathname,
+            loc.search,
+            loc.search ? '&' : '?',
+            gaQueryParamName == '' ? 'q' : encodeURIComponent(gaQueryParamName),
+            '=',
+            encodeURIComponent(query)
+          ].join('');
+          _gaq.push(["_trackPageview", url]);
+        }
+        google.setOnLoadCallback(function() {
+          var customSearchControl = new google.search.CustomSearchControl('#{config.google_custom_search}');
+          customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+          customSearchControl.setSearchStartingCallback(null, _trackQuery);
+          customSearchControl.draw('cse');
+        }, true);
+    - if page.lib?("plusone")
+      script src="https://apis.google.com/js/plusone.js"
+
+    script src="/js/jquery.tweet.js"
+    script src="/js/script.js"
+
+

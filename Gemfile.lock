@@ -1,0 +1,68 @@
+GIT
+  remote: git://github.com/nathanaeljones/hardwired.git
+  revision: c435d9fd4ef2e22807402d0e0445263126590d60
+  specs:
+    hardwired (0.3.2)
+      nokogiri
+      sinatra (>= 1.3.3)
+      tilt
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    columnize (0.3.6)
+    commonjs (0.2.6)
+    daemons (1.1.9)
+    debugger (1.5.0)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.2.0)
+      debugger-ruby_core_source (~> 1.2.0)
+    debugger-linecache (1.2.0)
+    debugger-ruby_core_source (1.2.0)
+    eventmachine (1.0.3)
+    kramdown (1.0.1)
+    less (2.3.1)
+      commonjs (~> 0.2.6)
+    libv8 (3.11.8.17)
+    listen (0.7.3)
+    nokogiri (1.5.9)
+    rack (1.5.2)
+    rack-cache (1.2)
+      rack (>= 0.4)
+    rack-protection (1.5.0)
+      rack
+    rb-fsevent (0.9.3)
+    ref (1.0.4)
+    rerun (0.8.0)
+      listen
+    sinatra (1.4.2)
+      rack (~> 1.5, >= 1.5.2)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+    slim (1.3.6)
+      temple (~> 0.5.5)
+      tilt (~> 1.3.3)
+    temple (0.5.5)
+    therubyracer (0.11.4)
+      libv8 (~> 3.11.8.12)
+      ref
+    thin (1.5.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
+    tilt (1.3.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  debugger
+  hardwired!
+  kramdown
+  less
+  rack-cache
+  rb-fsevent
+  rerun
+  slim
+  therubyracer
+  thin

@@ -1,0 +1,32 @@
+Layout: layout
+
+-if page.meta.banner
+  .banners-wrap.t
+    .banners
+      == partial page.meta.banner.to_sym
+
+.page-content.no-banner
+  div class="#{page.meta.textclass || 't'}"
+    - if page.lib?("plusone")
+      div style="width:70px;padding-top:25px;float:right"
+        .g-plusone
+    - if page.heading
+      h1.page-header
+        == page.heading
+
+    == yield
+
+    - if page.lib?("plusone")
+      .g-plusone
+
+
+- if page.date
+  footer
+    p.meta
+      strong
+        | Published on 
+        time datetime=page.date.to_s pubdate=true
+          = page.date.strftime("%d %B %Y")
+          
+- if !page.lib?('-comments')
+  == partial :comments
