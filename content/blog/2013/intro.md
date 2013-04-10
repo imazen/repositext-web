@@ -1,6 +1,6 @@
 Date: April 9 2013
 
-# Introducing the Cranberry Initiative
+# Introducing the TextHive Initiative
 
 Traditional publishing companies face ever-growing complexity and diversity in their publiation formats.
 
@@ -8,7 +8,7 @@ In some sectors, content must be maintained decades after it has been published,
 
 **To sum up: every organization has unique restrictions and needs, and existing content management systems fail miserably at meeting these needs.**
 
-Instead of providing yet another content management system, the Cranberry initative aims to provide a toolset to allow organizations to build their own optimized systems and workflows.
+Instead of providing yet another content management system, the TextHive initative aims to provide a toolset to allow organizations to build their own optimized systems and workflows.
 
 ### The core approach
 
