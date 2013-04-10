@@ -29,3 +29,6 @@ To support the widely-varying needs of organizations, a DVCS is required. While 
 On top of Git, we will branch GitLab and begin developing content (vs code)-specific functionality to assist with revision, review, and publication.
 
 
+## We're hiring!
+
+If this sounds interesting, [come work on TextHive at Imazen](http://careers.stackoverflow.com/jobs/32414/ruby-javascript-git-engineer-imazen). 
