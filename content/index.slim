@@ -17,47 +17,39 @@ header.highlight
 
 .row
   .span4
+    h3.left-align Based on Git & Markdown
     markdown:
-      ### Based on Git & Markdown
 
       **Git offers limitless workflow flexibility. Markdown offers a highly-refined content syntax. Together, they give us happy merges and clean version history.**
 
       Traditional CMSes enforce a linear workflow &mdash; something that's truly absurd in today's collaborative editing and multi-channel publishing world.
   .span4
+    h3.left-align Entry-point agnostic
+    markdown:
 
-markdown:
+      Why should it matter what tools are used to create or edit content? We're creating precise **Markdown <-> Word**, **Markdown <-> InDesign**, and **Markdown <-> HTML** conversion tools (yes, *both* directions).
 
-  ### Content entry-point doesn't matter
+      This will enable easy transitions, support legacy content imports, and permit hybrid workflows (some contributors can use Word while others using Markdown directly). We anticipate building a drag-and-drop web interface to make hybrid situations easier.
+  .span4
+    h3.left-align WYSIWYG is an anti-pattern
+    markdown:
 
-  Why should it matter what tools are used to create or edit content? We're creating precise **Markdown <-> Word**, **Markdown <-> InDesign**, and **Markdown <-> HTML** conversion tools (yes, *both* directions).
-
-  This will enable easy transitions, support legacy content imports, and permit hybrid workflows (some contributors can use Word while others using Markdown directly). We anticipate building a drag-and-drop web interface to make hybrid situations easier.
-
-  ### WYSIWYG is an anti-pattern
-
-  As we publish to an ever-growing number of medias and devices, we discover the impossibility of making everything look the same everwhere. We also discover it's a terrible goal; each media needs adaption. Consistent, simple content formats allow us to do this easily with stylesheets.
-
-  ### 100% Open-source
-
-  Imazen will be releasing everything under the MIT or Apache licenses - you can follow development at [github.com/imazen](http://github.com/imazen)
-
-  ## Imazen is hiring developers for Repositext.
-
-  [Apply at careers.stackoverflow.com](http://careers.stackoverflow.com/jobs/employer/Imazen) to work on Repositext.
-
-  ## Working on similar projects? Let's collaborate!
-
-
-
-
+      As we publish to an ever-growing number of medias and devices, we discover the impossibility of making everything look the same everwhere. We also discover it's a terrible goal; each media needs adaption. Consistent, simple content formats allow us to do this easily with stylesheets.
 
 .row
+  .span4
+    h3.left-align 100% open-source
+    markdown:
+      Imazen will be releasing everything under the MIT or Apache licenses - you can follow development at [github.com/imazen](http://github.com/imazen)
 
-  .span6
-    h2 Jobs
+  .span4
+    h3.left-align Join Imazen
+    markdown:
 
-  .span6
-    h2 News
+      [Apply at careers.stackoverflow.com](http://careers.stackoverflow.com/jobs/employer/Imazen) to work on Repositext. More info at [imazen.io/careers](http://imazen.io/careers)
+
+  .span4
+    h3.left-align News
 
     - for post in index.posts[0..2] do
       article 
@@ -70,6 +62,37 @@ markdown:
 
     h4
      a href="/blog" See more...
+
+
+hr
+
+.row
+  .span4
+    h3.left-align Related projects
+    markdown:
+      * Prose.io
+      * Substance.io
+      * editorially.com
+      * socrates.io
+      * firepad.io
+      * droplets.com
+
+  .span4
+    h3.left-align Markdown Editors
+    markdown:
+      * [Dillinger](https://github.com/joemccann/dillinger)
+      * [http://strapdownjs.com/]
+      * http://dropplets.com/
+
+  .span4
+    h3.left-align Markdown+Git Micro-CMSes
+    markdown:
+
+      * [Hardwired](http://hardwiredcms.com)
+      * [Nesta](http://nestacms.com)
+      * [Jekyll](https://github.com/mojombo/jekyll) (static-site generator)
+      * [Pico](http://pico.dev7studios.com/)
+      * [GitHub itself](http://paulhammant.com/blog/github-as-a-cms-to-end-cmses.html/)
 
 
 
