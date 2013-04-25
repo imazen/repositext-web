@@ -31,8 +31,9 @@ html lang="en" class="no-js"
 
     == partial :analytics
   body
-    == partial :header
-    .container
+    section.container
+      == partial :header
+    section.container
       == yield
     footer.footer
       .container
