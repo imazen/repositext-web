@@ -4,69 +4,106 @@ Libs: uservoice, bxSlider, -comments
 
 header.highlight
   markdown:
+
+    ##Great, big old logo will go here.
   
-    ### Large-scale content collaboration & publishing [is broken.](/why)
+    ### Large-scale content collaboration & publishing [is broken.](/why) We're fixing it.
 
-    ## We're fixing it - [want to join us?](/join)
-
-    **Working on something similar? [Let's talk!](mailto:n@imazen.io)**
-
-  hr.shadow-line
-
+hr.border-line
 .row
-  .span4
-    h3.left-align Based on Git & Markdown
+  markdown:
+    ## Our Initiative
+  .span9
     markdown:
 
-      **Git offers limitless workflow flexibility. Markdown offers a highly-refined content syntax. Together, they give us happy merges and clean version history.**
+      Traditional publishing companies face ever-growing complexity and diversity in their publiation formats.
+
+      In some sectors, content must be maintained decades after it has been published, leading to a very complex and difficult versioning needs. Other sectors have legal requirements that require auditing of all changes and content by multiple personnel.
+  .span3
+    markdown:
+      *Let's put a graph here.*
+.row
+  .span12.center-align
+    markdown:
+      **Every organization has unique restrictions and needs, and existing content management systems fail miserably at meeting these needs.**
+.row
+  .span3
+    markdown:
+      *Let's put another graph here*
+  .span9
+    markdown:
+
+      Instead of providing yet another content management system, the Repositext initative aims to provide a toolset to allow organizations to build their own optimized systems and workflows.
+
+      If you'd like more information about Repositext, keep reading, or check out our [why page](/why) and [roadmap](/roadmap).
+
+/As soon as we have proper graphs, get rid of the span stuff and use the align function that's on pages 411-412 of your favorite textbok. Zebra
+hr.border-line
+.row
+  markdown:
+    ## Basics
+  .span6
+    h3 Based on Git & Markdown
+    markdown:
+
+      **Git offers limitless workflow flexibility. Markdown offers a highly-refined content syntax. Together, they give us happy merges and clean version history.** Both have been adopted broadly, and are likely to guide the direction of the publishing industry.
 
       Traditional CMSes enforce a linear workflow &mdash; something that's truly absurd in today's collaborative editing and multi-channel publishing world.
-  .span4
-    h3.left-align Entry-point agnostic
+
+  .span6
+    h3 Entry-point agnostic
     markdown:
 
-      Why should it matter what tools are used to create or edit content? We're creating precise **Markdown <-> Word**, **Markdown <-> InDesign**, and **Markdown <-> HTML** conversion tools (yes, *both* directions).
+      Why should it matter what tools are used to create or edit content? We're creating precise **Markdown <-> Word**, **Markdown <-> InDesign**, and **Markdown <-> HTML** conversion tools (yes, *both* directions). We also offer two-way synchronization with In-Design and Word, which allows users to stay in their comfort zone without breaking workflow.
 
       This will enable easy transitions, support legacy content imports, and permit hybrid workflows (some contributors can use Word while others using Markdown directly). We anticipate building a drag-and-drop web interface to make hybrid situations easier.
-  .span4
-    h3.left-align WYSIWYG is an anti-pattern
+.row
+  .span6
+    h3 WYSIWYG is an anti-pattern
     markdown:
 
       As we publish to an ever-growing number of medias and devices, we discover the impossibility of making everything look the same everwhere. We also discover it's a terrible goal; each media needs adaption. Consistent, simple content formats allow us to do this easily with stylesheets.
+  .span6
+    h3 100% open-source
+    markdown:
+      Imazen will be releasing everything under the MIT or Apache licenses - you can follow development at [github.com/imazen](http://github.com/imazen). Cookie-cutter solutions aren't the answer; our open-source components and expertise will let us build the system that is right for you.
+
+hr.border-line
 
 .row
-  .span4
-    h3.left-align 100% open-source
+  .span12.center-align
     markdown:
-      Imazen will be releasing everything under the MIT or Apache licenses - you can follow development at [github.com/imazen](http://github.com/imazen)
+      ## Join Us
 
-  .span4
-    h3.left-align Join Imazen
+      ####Repositext is an initiative, and like any proper initiative, there are many ways you can help out.
+
+      *Working on something similar? [Let's talk!](mailto:n@imazen.io)*
+.row
+  br
+  .span6
     markdown:
+      * [Apply at careers.stackoverflow.com](http://careers.stackoverflow.com/jobs/employer/Imazen) to work on Repositext.
 
-      [Apply at careers.stackoverflow.com](http://careers.stackoverflow.com/jobs/employer/Imazen) to work on Repositext.
+      * Tell others about this project.
 
-  .span4
-    h3.left-align News
+      * Help us connect with more potential users of the system.
+  .span6
+    markdown:
+      * Help us locate talent.
 
-    - for post in index.posts[0..2] do
-      article 
-        h4.page-header
-          a href=post.path #{post.heading} 
-          small #{post.date.strftime("%A, %B %e %Y")}
-        == post.summary(self,200)
-        |  
-        a href="#{post.path}#disqus_thread" View comments on original page...
+      * Try out our beta releases and give us feedback.
 
-    h4
-     a href="/blog" See more...
-
-
-hr
+      * Jump in and start [contributing improvements on GitHub](https://github.com/imazen/repositext-guide).
+  /We should probably link these up. Put the requisite social network icons next to "Tell others about this project."
+  br
+  br
+hr.border-line
 
 .row
+  markdown:
+    ##Resources
   .span4
-    h3.left-align Related projects
+    h3 Related projects
     markdown:
       * [Substance.io](http://substance.io) [[source]](https://github.com/substance) [[internals]](http://interior.substance.io/) - Structured document editing
       * [Editorially](http://editorially.com) - Markdown-centric collaboration 
@@ -75,7 +112,7 @@ hr
       * [Draft](http://draftin.com) - Version control for writers (markdown editor)
       * [Markdown spec](http://www.rumproarious.com/2012/10/29/markdown-the-spec/)
   .span4
-    h3.left-align Markdown Editors
+    h3 Markdown Editors
     markdown:
       * [prose.io](http://prose.io) - [source](https://github.com/prose/prose) (BSD license)
       * [dillinger.io](http://dillinger.io) - [source](https://github.com/joemccann/dillinger) (MIT license)
@@ -83,7 +120,7 @@ hr
       * [firepad.io](firepad.io) - generic collaborative text editing.
       * [strapdown.js](http://strapdownjs.com/) - client-side markdown rendering
   .span4
-    h3.left-align Markdown+Git Micro-CMSes
+    h3 Markdown+Git Micro-CMSes
     markdown:
 
       * [Hardwired](http://hardwiredcms.com)
