@@ -2,7 +2,7 @@
 # Roadmap
 
 
-### Stage 1 - InDesign & XML import, validation components
+### Stage 1 - InDesign & XML import, validation components - COMPLETE
 
   * Build InDesign .idml -> Markdown conversion system
   * Build XML -> Markdown conversion system
@@ -10,7 +10,7 @@
   * Build tools for removing markdown features from text
   * Build change replay tool - given a change in a subset file, replay the change in a superset file, where the superset file contains additional formatting.
 
-### Stage 2 - Word import, InDesign export
+### Stage 2 - Word import, InDesign export - COMPLETE
 
  * Build Word -> Markdown import tool
  * Build Markdown -> InDesign (.idml) export tool
