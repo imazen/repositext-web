@@ -22,4 +22,4 @@ Imagine 100,000 pages of content, part of a single collection (think Encyclopedi
 * We build these tools into a web interface similar to GitHub. (GitLab).
 * We optimize and rework the web interface for the needs of content collaborators.
 
-This allows real-world integration in messy workflows, and permits conflict resolution (say two editors edit the same document at the same time) to be cleaned up easily. If they're using Word, both editors drag-and-drop upload their Word files into the web interface, and can watch their changes be merged automatically or fixed manually.
+This allows real-world integration in messy workflows, and permits conflict resolution (say two editors edit the same document at the same time) to be cleaned up easily. If they're using Word, both editors drag-and-drop upload their Word files into the web interface, and can watch their changes be merged automatically or fixed manually. 
